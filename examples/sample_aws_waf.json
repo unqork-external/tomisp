@@ -1,0 +1,3612 @@
+[
+    {
+        "timestamp": 1697570693286,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "PREFMManaged-Company_RuleA-1689976449522",
+        "terminatingRuleType": "GROUP",
+        "action": "BLOCK",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": {
+                    "ruleId": "sinkhole-ip",
+                    "action": "BLOCK",
+                    "ruleMatchDetails": null
+                },
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": 302,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "user-agent",
+                    "value": "curl/8.1.2"
+                },
+                {
+                    "name": "accept",
+                    "value": "*/*"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/2.0",
+            "httpMethod": "GET",
+            "requestId": "1-652edf85-18a5324300d90c7004a54d45",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "curl/8.1.2"
+        },
+        "ja3Fingerprint": "2bab0327a296230f9f6427341e716ea0",
+        "terminatingRuleName": "Company_RuleA",
+        "terminating_rule_group": "Company_RuleA",
+        "terminating_rule_name": "sinkhole-ip"
+    },
+    {
+        "timestamp": 1697569727353,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "Default_Action",
+        "terminatingRuleType": "REGULAR",
+        "action": "ALLOW",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/Zs34aQCaZmj/WpgULBpaoqRa6C4LGDb36SFS43Ou3katmKZh",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/mrWRyM6CyCE81/TMLYuwfW1iljUNQG7tVXSNXwdshHWa8DbYKN",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/HanNLcSwtPMDeE06sm/JtbPHyM5coa-quoLw0Pa0fgQdoAC1kOAZkqa",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/OOKKpUnIWbrekeUXsU/HbnKCs4FA2kFnYwaDaBO52L8GjMdEDJCFkPv",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAmazonIpReputationList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAnonymousIpList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesLinuxRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesKnownBadInputsRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": null,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "accept-encoding",
+                    "value": "gzip, deflate, br"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "nope"
+                },
+                {
+                    "name": "Host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "Connection",
+                    "value": "close"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/1.1",
+            "httpMethod": "GET",
+            "requestId": "1-652edbbf-1cd77e9913052fac14c0834c",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "nope"
+        },
+        "ja3Fingerprint": "080027e640f8ec6d966f79fc2f7ca551",
+        "terminatingRuleName": "Unknown"
+    },
+    {
+        "timestamp": 1697570921255,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "PREFMManaged-Company_RuleA-1689976449522",
+        "terminatingRuleType": "GROUP",
+        "action": "BLOCK",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": {
+                    "ruleId": "sinkhole-ip",
+                    "action": "BLOCK",
+                    "ruleMatchDetails": null
+                },
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": 302,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "aaozx",
+                    "value": "oWY8XVwXMfHqUlpo6MGb"
+                },
+                {
+                    "name": "user-agent",
+                    "value": "foo bar baz"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/2.0",
+            "httpMethod": "GET",
+            "requestId": "1-652ee069-0a32fde23d4fdf423d8efcb9",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "foo bar baz"
+        },
+        "ja3Fingerprint": "51c688a0a86d7dc48acfd8141af86002",
+        "terminatingRuleName": "Company_RuleA",
+        "terminating_rule_group": "Company_RuleA",
+        "terminating_rule_name": "sinkhole-ip"
+    },
+    {
+        "timestamp": 1697571000692,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "Default_Action",
+        "terminatingRuleType": "REGULAR",
+        "action": "ALLOW",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/Zs34aQCaZmj/WpgULBpaoqRa6C4LGDb36SFS43Ou3katmKZh",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/mrWRyM6CyCE81/TMLYuwfW1iljUNQG7tVXSNXwdshHWa8DbYKN",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/HanNLcSwtPMDeE06sm/JtbPHyM5coa-quoLw0Pa0fgQdoAC1kOAZkqa",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/OOKKpUnIWbrekeUXsU/HbnKCs4FA2kFnYwaDaBO52L8GjMdEDJCFkPv",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAmazonIpReputationList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAnonymousIpList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesLinuxRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesKnownBadInputsRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": null,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "aaozx",
+                    "value": "oWY8XVwXMfHqUlpo6MGb"
+                },
+                {
+                    "name": "user-agent",
+                    "value": "foo bar baz"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/2.0",
+            "httpMethod": "GET",
+            "requestId": "1-652ee0b8-5e6de6b21300e29e720ec359",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "foo bar baz"
+        },
+        "ja3Fingerprint": "51c688a0a86d7dc48acfd8141af86002",
+        "terminatingRuleName": "Unknown"
+    },
+    {
+        "timestamp": 1697570986568,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "Default_Action",
+        "terminatingRuleType": "REGULAR",
+        "action": "ALLOW",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/Zs34aQCaZmj/WpgULBpaoqRa6C4LGDb36SFS43Ou3katmKZh",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/mrWRyM6CyCE81/TMLYuwfW1iljUNQG7tVXSNXwdshHWa8DbYKN",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/HanNLcSwtPMDeE06sm/JtbPHyM5coa-quoLw0Pa0fgQdoAC1kOAZkqa",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/OOKKpUnIWbrekeUXsU/HbnKCs4FA2kFnYwaDaBO52L8GjMdEDJCFkPv",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAmazonIpReputationList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAnonymousIpList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesLinuxRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesKnownBadInputsRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": null,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "aaozx",
+                    "value": "oWY8XVwXMfHqUlpo6MGb"
+                },
+                {
+                    "name": "user-agent",
+                    "value": "foo bar baz"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/2.0",
+            "httpMethod": "GET",
+            "requestId": "1-652ee0aa-4a9d3393567091d819496aa7",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "foo bar baz"
+        },
+        "ja3Fingerprint": "51c688a0a86d7dc48acfd8141af86002",
+        "terminatingRuleName": "Unknown"
+    },
+    {
+        "timestamp": 1697569837288,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "Default_Action",
+        "terminatingRuleType": "REGULAR",
+        "action": "ALLOW",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/Zs34aQCaZmj/WpgULBpaoqRa6C4LGDb36SFS43Ou3katmKZh",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/mrWRyM6CyCE81/TMLYuwfW1iljUNQG7tVXSNXwdshHWa8DbYKN",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/HanNLcSwtPMDeE06sm/JtbPHyM5coa-quoLw0Pa0fgQdoAC1kOAZkqa",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/OOKKpUnIWbrekeUXsU/HbnKCs4FA2kFnYwaDaBO52L8GjMdEDJCFkPv",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAmazonIpReputationList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAnonymousIpList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesLinuxRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesKnownBadInputsRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": null,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "Host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Mozilla/5.0 (Windows NT 10.0; Microsoft Windows 10.0.22621; en-US) PowerShell/7.3.8"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/1.1",
+            "httpMethod": "GET",
+            "requestId": "1-652edc2d-0d39b713397c12e308f367b7",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Microsoft Windows 10.0.22621; en-US) PowerShell/7.3.8"
+        },
+        "ja3Fingerprint": "3c4eb72b882d4d1442c67ce73f1292a9",
+        "terminatingRuleName": "Unknown"
+    },
+    {
+        "timestamp": 1697569904746,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "Default_Action",
+        "terminatingRuleType": "REGULAR",
+        "action": "ALLOW",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/Zs34aQCaZmj/WpgULBpaoqRa6C4LGDb36SFS43Ou3katmKZh",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/mrWRyM6CyCE81/TMLYuwfW1iljUNQG7tVXSNXwdshHWa8DbYKN",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/HanNLcSwtPMDeE06sm/JtbPHyM5coa-quoLw0Pa0fgQdoAC1kOAZkqa",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/OOKKpUnIWbrekeUXsU/HbnKCs4FA2kFnYwaDaBO52L8GjMdEDJCFkPv",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAmazonIpReputationList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAnonymousIpList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesLinuxRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesKnownBadInputsRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": null,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "sec-ch-ua",
+                    "value": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Opera GX\";v=\"100\""
+                },
+                {
+                    "name": "sec-ch-ua-mobile",
+                    "value": "?0"
+                },
+                {
+                    "name": "sec-ch-ua-platform",
+                    "value": "\"macOS\""
+                },
+                {
+                    "name": "upgrade-insecure-requests",
+                    "value": "1"
+                },
+                {
+                    "name": "user-agent",
+                    "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 OPR/100.0.0.0"
+                },
+                {
+                    "name": "accept",
+                    "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+                },
+                {
+                    "name": "sec-fetch-site",
+                    "value": "none"
+                },
+                {
+                    "name": "sec-fetch-mode",
+                    "value": "navigate"
+                },
+                {
+                    "name": "sec-fetch-user",
+                    "value": "?1"
+                },
+                {
+                    "name": "sec-fetch-dest",
+                    "value": "document"
+                },
+                {
+                    "name": "accept-encoding",
+                    "value": "gzip, deflate, br"
+                },
+                {
+                    "name": "accept-language",
+                    "value": "en-US,en;q=0.9"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/2.0",
+            "httpMethod": "GET",
+            "requestId": "1-652edc70-299b4f2a28262f6b396004b7",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 OPR/100.0.0.0"
+        },
+        "ja3Fingerprint": "a0e914bf2a66f2141a09f6e39ea45768",
+        "terminatingRuleName": "Unknown"
+    },
+    {
+        "timestamp": 1697569905031,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "Default_Action",
+        "terminatingRuleType": "REGULAR",
+        "action": "ALLOW",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/Zs34aQCaZmj/WpgULBpaoqRa6C4LGDb36SFS43Ou3katmKZh",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/mrWRyM6CyCE81/TMLYuwfW1iljUNQG7tVXSNXwdshHWa8DbYKN",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/HanNLcSwtPMDeE06sm/JtbPHyM5coa-quoLw0Pa0fgQdoAC1kOAZkqa",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/OOKKpUnIWbrekeUXsU/HbnKCs4FA2kFnYwaDaBO52L8GjMdEDJCFkPv",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAmazonIpReputationList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAnonymousIpList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesLinuxRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesKnownBadInputsRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": null,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "sec-ch-ua",
+                    "value": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Opera GX\";v=\"100\""
+                },
+                {
+                    "name": "sec-ch-ua-mobile",
+                    "value": "?0"
+                },
+                {
+                    "name": "user-agent",
+                    "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 OPR/100.0.0.0"
+                },
+                {
+                    "name": "sec-ch-ua-platform",
+                    "value": "\"macOS\""
+                },
+                {
+                    "name": "accept",
+                    "value": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+                },
+                {
+                    "name": "sec-fetch-site",
+                    "value": "same-origin"
+                },
+                {
+                    "name": "sec-fetch-mode",
+                    "value": "no-cors"
+                },
+                {
+                    "name": "sec-fetch-dest",
+                    "value": "image"
+                },
+                {
+                    "name": "referer",
+                    "value": "https://testservice.GBquGaE.com/"
+                },
+                {
+                    "name": "accept-encoding",
+                    "value": "gzip, deflate, br"
+                },
+                {
+                    "name": "accept-language",
+                    "value": "en-US,en;q=0.9"
+                }
+            ],
+            "uri": "/favicon.ico",
+            "args": "",
+            "httpVersion": "HTTP/2.0",
+            "httpMethod": "GET",
+            "requestId": "1-652edc71-11d7eeb12e3beda429204549",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 OPR/100.0.0.0",
+            "referer": "https://testservice.GBquGaE.com/"
+        },
+        "ja3Fingerprint": "a0e914bf2a66f2141a09f6e39ea45768",
+        "terminatingRuleName": "Unknown"
+    },
+    {
+        "timestamp": 1697571377667,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "Default_Action",
+        "terminatingRuleType": "REGULAR",
+        "action": "ALLOW",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/Zs34aQCaZmj/WpgULBpaoqRa6C4LGDb36SFS43Ou3katmKZh",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/mrWRyM6CyCE81/TMLYuwfW1iljUNQG7tVXSNXwdshHWa8DbYKN",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/HanNLcSwtPMDeE06sm/JtbPHyM5coa-quoLw0Pa0fgQdoAC1kOAZkqa",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/OOKKpUnIWbrekeUXsU/HbnKCs4FA2kFnYwaDaBO52L8GjMdEDJCFkPv",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAmazonIpReputationList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAnonymousIpList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesLinuxRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesKnownBadInputsRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": null,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "eodum",
+                    "value": "2MpFBpiUfjtmUNdeenk7"
+                },
+                {
+                    "name": "aaozx",
+                    "value": "oWY8XVwXMfHqUlpo6MGb"
+                },
+                {
+                    "name": "user-agent",
+                    "value": "foo bar baz"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/2.0",
+            "httpMethod": "GET",
+            "requestId": "1-652ee231-5da82a23625742c952128f9e",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "foo bar baz"
+        },
+        "ja3Fingerprint": "51c688a0a86d7dc48acfd8141af86002",
+        "terminatingRuleName": "Unknown"
+    },
+    {
+        "timestamp": 1697571363807,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "Default_Action",
+        "terminatingRuleType": "REGULAR",
+        "action": "ALLOW",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/Zs34aQCaZmj/WpgULBpaoqRa6C4LGDb36SFS43Ou3katmKZh",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/mrWRyM6CyCE81/TMLYuwfW1iljUNQG7tVXSNXwdshHWa8DbYKN",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/HanNLcSwtPMDeE06sm/JtbPHyM5coa-quoLw0Pa0fgQdoAC1kOAZkqa",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/OOKKpUnIWbrekeUXsU/HbnKCs4FA2kFnYwaDaBO52L8GjMdEDJCFkPv",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAmazonIpReputationList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAnonymousIpList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesLinuxRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesKnownBadInputsRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": null,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "aaozx",
+                    "value": "oWY8XVwXMfHqUlpo6MGb"
+                },
+                {
+                    "name": "user-agent",
+                    "value": "foo bar baz"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/2.0",
+            "httpMethod": "GET",
+            "requestId": "1-652ee223-2369f5c033079a4523ce7f16",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "foo bar baz"
+        },
+        "ja3Fingerprint": "51c688a0a86d7dc48acfd8141af86002",
+        "terminatingRuleName": "Unknown"
+    },
+    {
+        "timestamp": 1697570407502,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "PREFMManaged-Company_RuleA-1689976449522",
+        "terminatingRuleType": "GROUP",
+        "action": "BLOCK",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": {
+                    "ruleId": "sinkhole-ip",
+                    "action": "BLOCK",
+                    "ruleMatchDetails": null
+                },
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": 302,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "Host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "AaOZx",
+                    "value": "oWY8XVwXMfHqUlpo6MGb"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Mozilla/5.0 (Windows NT 10.0; Microsoft Windows 10.0.22621; en-US) PowerShell/7.3.8"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/1.1",
+            "httpMethod": "GET",
+            "requestId": "1-652ede67-08124f8d0349312342db8af2",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Microsoft Windows 10.0.22621; en-US) PowerShell/7.3.8"
+        },
+        "ja3Fingerprint": "6a5d235ee78c6aede6a61448b4e9ff1e",
+        "terminatingRuleName": "Company_RuleA",
+        "terminating_rule_group": "Company_RuleA",
+        "terminating_rule_name": "sinkhole-ip"
+    },
+    {
+        "timestamp": 1697569496688,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "Default_Action",
+        "terminatingRuleType": "REGULAR",
+        "action": "ALLOW",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/Zs34aQCaZmj/WpgULBpaoqRa6C4LGDb36SFS43Ou3katmKZh",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/mrWRyM6CyCE81/TMLYuwfW1iljUNQG7tVXSNXwdshHWa8DbYKN",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/HanNLcSwtPMDeE06sm/JtbPHyM5coa-quoLw0Pa0fgQdoAC1kOAZkqa",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/OOKKpUnIWbrekeUXsU/HbnKCs4FA2kFnYwaDaBO52L8GjMdEDJCFkPv",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAmazonIpReputationList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAnonymousIpList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesLinuxRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesKnownBadInputsRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": null,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "accept",
+                    "value": "*/*"
+                },
+                {
+                    "name": "sec-fetch-site",
+                    "value": "same-origin"
+                },
+                {
+                    "name": "sec-fetch-dest",
+                    "value": "image"
+                },
+                {
+                    "name": "accept-language",
+                    "value": "en-US,en;q=0.9"
+                },
+                {
+                    "name": "sec-fetch-mode",
+                    "value": "no-cors"
+                },
+                {
+                    "name": "user-agent",
+                    "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15"
+                },
+                {
+                    "name": "referer",
+                    "value": "https://testservice.GBquGaE.com/"
+                },
+                {
+                    "name": "accept-encoding",
+                    "value": "gzip, deflate, br"
+                }
+            ],
+            "uri": "/favicon.ico",
+            "args": "",
+            "httpVersion": "HTTP/2.0",
+            "httpMethod": "GET",
+            "requestId": "1-652edad8-568a00e91d2be98916bc5ac5",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15",
+            "referer": "https://testservice.GBquGaE.com/"
+        },
+        "ja3Fingerprint": "773906b0efdefa24a7f2b8eb6985bf37",
+        "terminatingRuleName": "Unknown"
+    },
+    {
+        "timestamp": 1697569675823,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "Default_Action",
+        "terminatingRuleType": "REGULAR",
+        "action": "ALLOW",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/Zs34aQCaZmj/WpgULBpaoqRa6C4LGDb36SFS43Ou3katmKZh",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/mrWRyM6CyCE81/TMLYuwfW1iljUNQG7tVXSNXwdshHWa8DbYKN",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/HanNLcSwtPMDeE06sm/JtbPHyM5coa-quoLw0Pa0fgQdoAC1kOAZkqa",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/OOKKpUnIWbrekeUXsU/HbnKCs4FA2kFnYwaDaBO52L8GjMdEDJCFkPv",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAmazonIpReputationList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAnonymousIpList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesLinuxRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesKnownBadInputsRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": null,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "accept-encoding",
+                    "value": "gzip, deflate, br"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "foo bar"
+                },
+                {
+                    "name": "Host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "Connection",
+                    "value": "close"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/1.1",
+            "httpMethod": "GET",
+            "requestId": "1-652edb8b-3ce93964780b5b205b418867",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "foo bar"
+        },
+        "ja3Fingerprint": "080027e640f8ec6d966f79fc2f7ca551",
+        "terminatingRuleName": "Unknown"
+    },
+    {
+        "timestamp": 1697569686800,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "Default_Action",
+        "terminatingRuleType": "REGULAR",
+        "action": "ALLOW",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/Zs34aQCaZmj/WpgULBpaoqRa6C4LGDb36SFS43Ou3katmKZh",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/mrWRyM6CyCE81/TMLYuwfW1iljUNQG7tVXSNXwdshHWa8DbYKN",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/HanNLcSwtPMDeE06sm/JtbPHyM5coa-quoLw0Pa0fgQdoAC1kOAZkqa",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/OOKKpUnIWbrekeUXsU/HbnKCs4FA2kFnYwaDaBO52L8GjMdEDJCFkPv",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAmazonIpReputationList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAnonymousIpList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesLinuxRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesKnownBadInputsRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": null,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "accept-encoding",
+                    "value": "gzip, deflate, br"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Hi Justin! :)"
+                },
+                {
+                    "name": "Host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "Connection",
+                    "value": "close"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/1.1",
+            "httpMethod": "GET",
+            "requestId": "1-652edb96-4d53e4df05700357300d24a0",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "Hi Justin! :)"
+        },
+        "ja3Fingerprint": "080027e640f8ec6d966f79fc2f7ca551",
+        "terminatingRuleName": "Unknown"
+    },
+    {
+        "timestamp": 1697569664544,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "Default_Action",
+        "terminatingRuleType": "REGULAR",
+        "action": "ALLOW",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/Zs34aQCaZmj/WpgULBpaoqRa6C4LGDb36SFS43Ou3katmKZh",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/mrWRyM6CyCE81/TMLYuwfW1iljUNQG7tVXSNXwdshHWa8DbYKN",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/HanNLcSwtPMDeE06sm/JtbPHyM5coa-quoLw0Pa0fgQdoAC1kOAZkqa",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/OOKKpUnIWbrekeUXsU/HbnKCs4FA2kFnYwaDaBO52L8GjMdEDJCFkPv",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAmazonIpReputationList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAnonymousIpList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesLinuxRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesKnownBadInputsRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": null,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "accept-encoding",
+                    "value": "gzip, deflate, br"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)"
+                },
+                {
+                    "name": "Host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "Connection",
+                    "value": "close"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/1.1",
+            "httpMethod": "GET",
+            "requestId": "1-652edb80-5ad0697c6b5752b540958dad",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "Thunder Client (https://www.thunderclient.com)"
+        },
+        "ja3Fingerprint": "080027e640f8ec6d966f79fc2f7ca551",
+        "terminatingRuleName": "Unknown"
+    },
+    {
+        "timestamp": 1697569710420,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "PREFMManaged-Company_Prod-1689976449521",
+        "terminatingRuleType": "GROUP",
+        "action": "BLOCK",
+        "terminatingRuleMatchDetails": [
+            {
+                "conditionType": "REGEX",
+                "location": "HEADER",
+                "matchedData": null,
+                "matchedFieldName": "user-agent"
+            }
+        ],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": {
+                    "ruleId": "user-agent-block",
+                    "action": "BLOCK",
+                    "ruleMatchDetails": null
+                },
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": 302,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "accept-encoding",
+                    "value": "gzip, deflate, br"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "not nmap"
+                },
+                {
+                    "name": "Host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "Connection",
+                    "value": "close"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/1.1",
+            "httpMethod": "GET",
+            "requestId": "1-652edbae-28e85e0c7485d41d3423918e",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "not nmap"
+        },
+        "ja3Fingerprint": "080027e640f8ec6d966f79fc2f7ca551",
+        "terminatingRuleName": "Company_Prod",
+        "terminating_rule_group": "Company_Prod",
+        "terminating_rule_name": "user-agent-block"
+    },
+    {
+        "timestamp": 1697569751941,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "Default_Action",
+        "terminatingRuleType": "REGULAR",
+        "action": "ALLOW",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/Zs34aQCaZmj/WpgULBpaoqRa6C4LGDb36SFS43Ou3katmKZh",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/mrWRyM6CyCE81/TMLYuwfW1iljUNQG7tVXSNXwdshHWa8DbYKN",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/HanNLcSwtPMDeE06sm/JtbPHyM5coa-quoLw0Pa0fgQdoAC1kOAZkqa",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/OOKKpUnIWbrekeUXsU/HbnKCs4FA2kFnYwaDaBO52L8GjMdEDJCFkPv",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAmazonIpReputationList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAnonymousIpList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesLinuxRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesKnownBadInputsRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": null,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "accept-encoding",
+                    "value": "gzip, deflate, br"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "nope"
+                },
+                {
+                    "name": "Host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "Connection",
+                    "value": "close"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/1.1",
+            "httpMethod": "OPTIONS",
+            "requestId": "1-652edbd7-2682f3c156c4c6fd39f3dbaa",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "nope"
+        },
+        "ja3Fingerprint": "080027e640f8ec6d966f79fc2f7ca551",
+        "terminatingRuleName": "Unknown"
+    },
+    {
+        "timestamp": 1697569776484,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "Default_Action",
+        "terminatingRuleType": "REGULAR",
+        "action": "ALLOW",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/Zs34aQCaZmj/WpgULBpaoqRa6C4LGDb36SFS43Ou3katmKZh",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/mrWRyM6CyCE81/TMLYuwfW1iljUNQG7tVXSNXwdshHWa8DbYKN",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/HanNLcSwtPMDeE06sm/JtbPHyM5coa-quoLw0Pa0fgQdoAC1kOAZkqa",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/OOKKpUnIWbrekeUXsU/HbnKCs4FA2kFnYwaDaBO52L8GjMdEDJCFkPv",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAmazonIpReputationList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAnonymousIpList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesLinuxRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesKnownBadInputsRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": null,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "sec-ch-ua",
+                    "value": "\"Chromium\";v=\"118\", \"Microsoft Edge\";v=\"118\", \"Not=A?Brand\";v=\"99\""
+                },
+                {
+                    "name": "sec-ch-ua-mobile",
+                    "value": "?0"
+                },
+                {
+                    "name": "sec-ch-ua-platform",
+                    "value": "\"Windows\""
+                },
+                {
+                    "name": "dnt",
+                    "value": "1"
+                },
+                {
+                    "name": "upgrade-insecure-requests",
+                    "value": "1"
+                },
+                {
+                    "name": "user-agent",
+                    "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.46"
+                },
+                {
+                    "name": "accept",
+                    "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+                },
+                {
+                    "name": "sec-fetch-site",
+                    "value": "none"
+                },
+                {
+                    "name": "sec-fetch-mode",
+                    "value": "navigate"
+                },
+                {
+                    "name": "sec-fetch-user",
+                    "value": "?1"
+                },
+                {
+                    "name": "sec-fetch-dest",
+                    "value": "document"
+                },
+                {
+                    "name": "accept-encoding",
+                    "value": "gzip, deflate, br"
+                },
+                {
+                    "name": "accept-language",
+                    "value": "en-US,en;q=0.9"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/2.0",
+            "httpMethod": "GET",
+            "requestId": "1-652edbf0-2f2a02a6180854314d17d1ae",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.46"
+        },
+        "ja3Fingerprint": "388789490f992164d5a20e000e7e82b5",
+        "terminatingRuleName": "Unknown"
+    },
+    {
+        "timestamp": 1697569364191,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "Default_Action",
+        "terminatingRuleType": "REGULAR",
+        "action": "ALLOW",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/Zs34aQCaZmj/WpgULBpaoqRa6C4LGDb36SFS43Ou3katmKZh",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/mrWRyM6CyCE81/TMLYuwfW1iljUNQG7tVXSNXwdshHWa8DbYKN",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/HanNLcSwtPMDeE06sm/JtbPHyM5coa-quoLw0Pa0fgQdoAC1kOAZkqa",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/OOKKpUnIWbrekeUXsU/HbnKCs4FA2kFnYwaDaBO52L8GjMdEDJCFkPv",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAmazonIpReputationList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAnonymousIpList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesLinuxRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesKnownBadInputsRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": null,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "sec-ch-ua",
+                    "value": "\"Chromium\";v=\"118\", \"Google Chrome\";v=\"118\", \"Not=A?Brand\";v=\"99\""
+                },
+                {
+                    "name": "sec-ch-ua-mobile",
+                    "value": "?0"
+                },
+                {
+                    "name": "user-agent",
+                    "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
+                },
+                {
+                    "name": "sec-ch-ua-platform",
+                    "value": "\"macOS\""
+                },
+                {
+                    "name": "accept",
+                    "value": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+                },
+                {
+                    "name": "sec-fetch-site",
+                    "value": "same-origin"
+                },
+                {
+                    "name": "sec-fetch-mode",
+                    "value": "no-cors"
+                },
+                {
+                    "name": "sec-fetch-dest",
+                    "value": "image"
+                },
+                {
+                    "name": "referer",
+                    "value": "https://testservice.GBquGaE.com/"
+                },
+                {
+                    "name": "accept-encoding",
+                    "value": "gzip, deflate, br"
+                },
+                {
+                    "name": "accept-language",
+                    "value": "en-US,en;q=0.9"
+                },
+                {
+                    "name": "cookie",
+                    "value": "amplitude_id_09b0cde617650f5de608ac951be0c566GBquGaE.com=eyJkZXZpY2VJZCI6IjRjZTAxYjlkLWQxYjgtNDNlOS1iYzVmLTQ1NmQ5YWFjOTUzMVIiLCJ1c2VySWQiOm51bGwsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTY0MDE4OTcyNjE4NiwibGFzdEV2ZW50VGltZSI6MTY0MDE4OTcyNjE4NiwiZXZlbnRJZCI6MCwiaWRlbnRpZnlJZCI6MCwic2VxdWVuY2VOdW1iZXIiOjB9; _ga=GA1.1.249961282.1658946482; _ga_N35ZT2FH4X=GS1.1.1669680554.2.0.1669680554.0.0.0"
+                }
+            ],
+            "uri": "/favicon.ico",
+            "args": "",
+            "httpVersion": "HTTP/2.0",
+            "httpMethod": "GET",
+            "requestId": "1-652eda54-5c26008230217f243b6d598e",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+            "referer": "https://testservice.GBquGaE.com/"
+        },
+        "ja3Fingerprint": "fbf27045a2892a65cc505777c5e813fe",
+        "terminatingRuleName": "Unknown"
+    },
+    {
+        "timestamp": 1697569364001,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "Default_Action",
+        "terminatingRuleType": "REGULAR",
+        "action": "ALLOW",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/Zs34aQCaZmj/WpgULBpaoqRa6C4LGDb36SFS43Ou3katmKZh",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/mrWRyM6CyCE81/TMLYuwfW1iljUNQG7tVXSNXwdshHWa8DbYKN",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/HanNLcSwtPMDeE06sm/JtbPHyM5coa-quoLw0Pa0fgQdoAC1kOAZkqa",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/OOKKpUnIWbrekeUXsU/HbnKCs4FA2kFnYwaDaBO52L8GjMdEDJCFkPv",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAmazonIpReputationList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAnonymousIpList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesLinuxRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesKnownBadInputsRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": null,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "sec-ch-ua",
+                    "value": "\"Chromium\";v=\"118\", \"Google Chrome\";v=\"118\", \"Not=A?Brand\";v=\"99\""
+                },
+                {
+                    "name": "sec-ch-ua-mobile",
+                    "value": "?0"
+                },
+                {
+                    "name": "sec-ch-ua-platform",
+                    "value": "\"macOS\""
+                },
+                {
+                    "name": "upgrade-insecure-requests",
+                    "value": "1"
+                },
+                {
+                    "name": "user-agent",
+                    "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
+                },
+                {
+                    "name": "accept",
+                    "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+                },
+                {
+                    "name": "sec-fetch-site",
+                    "value": "none"
+                },
+                {
+                    "name": "sec-fetch-mode",
+                    "value": "navigate"
+                },
+                {
+                    "name": "sec-fetch-user",
+                    "value": "?1"
+                },
+                {
+                    "name": "sec-fetch-dest",
+                    "value": "document"
+                },
+                {
+                    "name": "accept-encoding",
+                    "value": "gzip, deflate, br"
+                },
+                {
+                    "name": "accept-language",
+                    "value": "en-US,en;q=0.9"
+                },
+                {
+                    "name": "cookie",
+                    "value": "amplitude_id_09b0cde617650f5de608ac951be0c566GBquGaE.com=eyJkZXZpY2VJZCI6IjRjZTAxYjlkLWQxYjgtNDNlOS1iYzVmLTQ1NmQ5YWFjOTUzMVIiLCJ1c2VySWQiOm51bGwsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTY0MDE4OTcyNjE4NiwibGFzdEV2ZW50VGltZSI6MTY0MDE4OTcyNjE4NiwiZXZlbnRJZCI6MCwiaWRlbnRpZnlJZCI6MCwic2VxdWVuY2VOdW1iZXIiOjB9; _ga=GA1.1.249961282.1658946482; _ga_N35ZT2FH4X=GS1.1.1669680554.2.0.1669680554.0.0.0"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/2.0",
+            "httpMethod": "GET",
+            "requestId": "1-652eda53-0a913e835e002e3a707a11da",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
+        },
+        "ja3Fingerprint": "fbf27045a2892a65cc505777c5e813fe",
+        "terminatingRuleName": "Unknown"
+    },
+    {
+        "timestamp": 1697569496354,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "Default_Action",
+        "terminatingRuleType": "REGULAR",
+        "action": "ALLOW",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/Zs34aQCaZmj/WpgULBpaoqRa6C4LGDb36SFS43Ou3katmKZh",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/mrWRyM6CyCE81/TMLYuwfW1iljUNQG7tVXSNXwdshHWa8DbYKN",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/HanNLcSwtPMDeE06sm/JtbPHyM5coa-quoLw0Pa0fgQdoAC1kOAZkqa",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/OOKKpUnIWbrekeUXsU/HbnKCs4FA2kFnYwaDaBO52L8GjMdEDJCFkPv",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAmazonIpReputationList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAnonymousIpList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesLinuxRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesKnownBadInputsRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": null,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "accept",
+                    "value": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+                },
+                {
+                    "name": "sec-fetch-site",
+                    "value": "none"
+                },
+                {
+                    "name": "accept-encoding",
+                    "value": "gzip, deflate, br"
+                },
+                {
+                    "name": "sec-fetch-mode",
+                    "value": "navigate"
+                },
+                {
+                    "name": "user-agent",
+                    "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15"
+                },
+                {
+                    "name": "accept-language",
+                    "value": "en-US,en;q=0.9"
+                },
+                {
+                    "name": "sec-fetch-dest",
+                    "value": "document"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/2.0",
+            "httpMethod": "GET",
+            "requestId": "1-652edad8-5ee795ad58a29a7038b4e781",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15"
+        },
+        "ja3Fingerprint": "773906b0efdefa24a7f2b8eb6985bf37",
+        "terminatingRuleName": "Unknown"
+    },
+    {
+        "timestamp": 1697570565948,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "PREFMManaged-Company_RuleA-1689976449522",
+        "terminatingRuleType": "GROUP",
+        "action": "BLOCK",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": {
+                    "ruleId": "sinkhole-ip",
+                    "action": "BLOCK",
+                    "ruleMatchDetails": null
+                },
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": 302,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "Host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "AaOZx",
+                    "value": "oWY8XVwXMfHqUlpo6MGb"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Mozilla/5.0 (Windows NT 10.0; Microsoft Windows 10.0.22621; en-US) PowerShell/7.3.8"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/1.1",
+            "httpMethod": "GET",
+            "requestId": "1-652edf05-75418ea86ec6c4ae6949003e",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Microsoft Windows 10.0.22621; en-US) PowerShell/7.3.8"
+        },
+        "ja3Fingerprint": "6a5d235ee78c6aede6a61448b4e9ff1e",
+        "terminatingRuleName": "Company_RuleA",
+        "terminating_rule_group": "Company_RuleA",
+        "terminating_rule_name": "sinkhole-ip"
+    },
+    {
+        "timestamp": 1697570527261,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "PREFMManaged-Company_RuleA-1689976449522",
+        "terminatingRuleType": "GROUP",
+        "action": "BLOCK",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": {
+                    "ruleId": "sinkhole-ip",
+                    "action": "BLOCK",
+                    "ruleMatchDetails": null
+                },
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": 302,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "Host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "AaOZx",
+                    "value": "oWY8XVwXMfHqUlpo6MGb"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Mozilla/5.0 (Windows NT 10.0; Microsoft Windows 10.0.22621; en-US) PowerShell/7.3.8"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/1.1",
+            "httpMethod": "GET",
+            "requestId": "1-652ededf-7ee32f182cdaec606ff2f5ff",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Microsoft Windows 10.0.22621; en-US) PowerShell/7.3.8"
+        },
+        "ja3Fingerprint": "6a5d235ee78c6aede6a61448b4e9ff1e",
+        "terminatingRuleName": "Company_RuleA",
+        "terminating_rule_group": "Company_RuleA",
+        "terminating_rule_name": "sinkhole-ip"
+    },
+    {
+        "timestamp": 1697570537274,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "PREFMManaged-Company_RuleA-1689976449522",
+        "terminatingRuleType": "GROUP",
+        "action": "BLOCK",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": {
+                    "ruleId": "sinkhole-ip",
+                    "action": "BLOCK",
+                    "ruleMatchDetails": null
+                },
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": 302,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "Host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "AaOZx",
+                    "value": "oWY8XVwXMfHqUlpo6MGb"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Mozilla/5.0 (Windows NT 10.0; Microsoft Windows 10.0.22621; en-US) PowerShell/7.3.8"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/1.1",
+            "httpMethod": "GET",
+            "requestId": "1-652edee9-095257e7075f95c03873b9e4",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Microsoft Windows 10.0.22621; en-US) PowerShell/7.3.8"
+        },
+        "ja3Fingerprint": "6a5d235ee78c6aede6a61448b4e9ff1e",
+        "terminatingRuleName": "Company_RuleA",
+        "terminating_rule_group": "Company_RuleA",
+        "terminating_rule_name": "sinkhole-ip"
+    },
+    {
+        "timestamp": 1697570637038,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "PREFMManaged-Company_RuleA-1689976449522",
+        "terminatingRuleType": "GROUP",
+        "action": "BLOCK",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": {
+                    "ruleId": "sinkhole-ip",
+                    "action": "BLOCK",
+                    "ruleMatchDetails": null
+                },
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": 302,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "aaozx",
+                    "value": "oWY8XVwXMfHqUlpo6MGb"
+                },
+                {
+                    "name": "user-agent",
+                    "value": "foo bar baz"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/2.0",
+            "httpMethod": "GET",
+            "requestId": "1-652edf4d-2d01f56115d082de181d34ad",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "foo bar baz"
+        },
+        "ja3Fingerprint": "51c688a0a86d7dc48acfd8141af86002",
+        "terminatingRuleName": "Company_RuleA",
+        "terminating_rule_group": "Company_RuleA",
+        "terminating_rule_name": "sinkhole-ip"
+    },
+    {
+        "timestamp": 1697570578792,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "PREFMManaged-Company_RuleA-1689976449522",
+        "terminatingRuleType": "GROUP",
+        "action": "BLOCK",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": {
+                    "ruleId": "sinkhole-ip",
+                    "action": "BLOCK",
+                    "ruleMatchDetails": null
+                },
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": 302,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "aaozx",
+                    "value": "oWY8XVwXMfHqUlpo6MGb"
+                },
+                {
+                    "name": "user-agent",
+                    "value": "Mozilla/5.0 (Windows NT 10.0; Microsoft Windows 10.0.22621; en-US) PowerShell/7.3.8"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/2.0",
+            "httpMethod": "GET",
+            "requestId": "1-652edf12-1198025f22eb94cf48263b6d",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Microsoft Windows 10.0.22621; en-US) PowerShell/7.3.8"
+        },
+        "ja3Fingerprint": "51c688a0a86d7dc48acfd8141af86002",
+        "terminatingRuleName": "Company_RuleA",
+        "terminating_rule_group": "Company_RuleA",
+        "terminating_rule_name": "sinkhole-ip"
+    },
+    {
+        "timestamp": 1697570697828,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "PREFMManaged-Company_RuleA-1689976449522",
+        "terminatingRuleType": "GROUP",
+        "action": "BLOCK",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": {
+                    "ruleId": "sinkhole-ip",
+                    "action": "BLOCK",
+                    "ruleMatchDetails": null
+                },
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": 302,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "user-agent",
+                    "value": "curl/8.1.2"
+                },
+                {
+                    "name": "accept",
+                    "value": "*/*"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/2.0",
+            "httpMethod": "GET",
+            "requestId": "1-652edf89-009d5e762f530cac3d9f9c84",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "curl/8.1.2"
+        },
+        "ja3Fingerprint": "2bab0327a296230f9f6427341e716ea0",
+        "terminatingRuleName": "Company_RuleA",
+        "terminating_rule_group": "Company_RuleA",
+        "terminating_rule_name": "sinkhole-ip"
+    },
+    {
+        "timestamp": 1697571995373,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "Default_Action",
+        "terminatingRuleType": "REGULAR",
+        "action": "ALLOW",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/Zs34aQCaZmj/WpgULBpaoqRa6C4LGDb36SFS43Ou3katmKZh",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/mrWRyM6CyCE81/TMLYuwfW1iljUNQG7tVXSNXwdshHWa8DbYKN",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/HanNLcSwtPMDeE06sm/JtbPHyM5coa-quoLw0Pa0fgQdoAC1kOAZkqa",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/OOKKpUnIWbrekeUXsU/HbnKCs4FA2kFnYwaDaBO52L8GjMdEDJCFkPv",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAmazonIpReputationList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAnonymousIpList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesLinuxRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesKnownBadInputsRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": null,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "Host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "eODUm",
+                    "value": "2MpFBpiUfjtmUNdeenk7"
+                },
+                {
+                    "name": "AaOZx",
+                    "value": "oWY8XVwXMfHqUlpo6MGb"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Mozilla/5.0 (Windows NT 10.0; Microsoft Windows 10.0.22621; en-US) PowerShell/7.3.8"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/1.1",
+            "httpMethod": "GET",
+            "requestId": "1-652ee49b-333b403d4946bb9b02371e76",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Microsoft Windows 10.0.22621; en-US) PowerShell/7.3.8"
+        },
+        "ja3Fingerprint": "6a5d235ee78c6aede6a61448b4e9ff1e",
+        "terminatingRuleName": "Unknown"
+    },
+    {
+        "timestamp": 1697572038044,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "Default_Action",
+        "terminatingRuleType": "REGULAR",
+        "action": "ALLOW",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/Zs34aQCaZmj/WpgULBpaoqRa6C4LGDb36SFS43Ou3katmKZh",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/mrWRyM6CyCE81/TMLYuwfW1iljUNQG7tVXSNXwdshHWa8DbYKN",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/HanNLcSwtPMDeE06sm/JtbPHyM5coa-quoLw0Pa0fgQdoAC1kOAZkqa",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/OOKKpUnIWbrekeUXsU/HbnKCs4FA2kFnYwaDaBO52L8GjMdEDJCFkPv",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAmazonIpReputationList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAnonymousIpList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesLinuxRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesKnownBadInputsRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": null,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "Host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "eODUm",
+                    "value": "2MpFBpiUfjtmUNdeenk7"
+                },
+                {
+                    "name": "AaOZx",
+                    "value": "oWY8XVwXMfHqUlpo6MGb"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "foo bar baz"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/1.1",
+            "httpMethod": "GET",
+            "requestId": "1-652ee4c6-645287ce4669731d20506c62",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "foo bar baz"
+        },
+        "ja3Fingerprint": "6a5d235ee78c6aede6a61448b4e9ff1e",
+        "terminatingRuleName": "Unknown"
+    },
+    {
+        "timestamp": 1697572031225,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "Default_Action",
+        "terminatingRuleType": "REGULAR",
+        "action": "ALLOW",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/Zs34aQCaZmj/WpgULBpaoqRa6C4LGDb36SFS43Ou3katmKZh",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/mrWRyM6CyCE81/TMLYuwfW1iljUNQG7tVXSNXwdshHWa8DbYKN",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/HanNLcSwtPMDeE06sm/JtbPHyM5coa-quoLw0Pa0fgQdoAC1kOAZkqa",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/OOKKpUnIWbrekeUXsU/HbnKCs4FA2kFnYwaDaBO52L8GjMdEDJCFkPv",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAmazonIpReputationList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAnonymousIpList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesLinuxRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesKnownBadInputsRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": null,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "Host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "eODUm",
+                    "value": "2MpFBpiUfjtmUNdeenk7"
+                },
+                {
+                    "name": "AaOZx",
+                    "value": "oWY8XVwXMfHqUlpo6MGb"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "foo bar baz"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/1.1",
+            "httpMethod": "GET",
+            "requestId": "1-652ee4bf-722ce11d06b0aef961ebeeb4",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "foo bar baz"
+        },
+        "ja3Fingerprint": "6a5d235ee78c6aede6a61448b4e9ff1e",
+        "terminatingRuleName": "Unknown"
+    },
+    {
+        "timestamp": 1697577894111,
+        "formatVersion": 1,
+        "webaclId": "arn:aws:wafv2:us-east-2:A64563787672:regional/webacl/QAhtcLMqsQdZW6k8F2-XwDS5-cSe7t-2ROpmsHBn6u5wTnWn5ttEgRWNrE/1tmggl0V64LSSPuU1QofUFnaDlmUwmlp-4dl",
+        "terminatingRuleId": "Default_Action",
+        "terminatingRuleType": "REGULAR",
+        "action": "ALLOW",
+        "terminatingRuleMatchDetails": [],
+        "httpSourceName": "ALB",
+        "httpSourceId": "760885738224-app/alb-testservice/ca11a5d311778351",
+        "ruleGroupList": [
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/ULF9Z641MWB1/oH1gOHZGRyGtn8OBFRsIGzgpY4SGdhwBWoJS",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/rhCs7x9IDO7/S7hZDe10GvW8mx-llZwgaY-3MYOYW7yGsI3G",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/xWHs54Itnqy1840/a8OK9jEpq3hWYDzF7Atr4UYBE0xhsCbco8pd",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/Zs34aQCaZmj/WpgULBpaoqRa6C4LGDb36SFS43Ou3katmKZh",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/mrWRyM6CyCE81/TMLYuwfW1iljUNQG7tVXSNXwdshHWa8DbYKN",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/HanNLcSwtPMDeE06sm/JtbPHyM5coa-quoLw0Pa0fgQdoAC1kOAZkqa",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "arn:aws:wafv2:us-east-2:A64563787672:regional/rulegroup/OOKKpUnIWbrekeUXsU/HbnKCs4FA2kFnYwaDaBO52L8GjMdEDJCFkPv",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAmazonIpReputationList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesAnonymousIpList",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesLinuxRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            },
+            {
+                "ruleGroupId": "AWS#AWSManagedRulesKnownBadInputsRuleSet",
+                "terminatingRule": null,
+                "nonTerminatingMatchingRules": [],
+                "excludedRules": null,
+                "customerConfig": null
+            }
+        ],
+        "rateBasedRuleList": [],
+        "nonTerminatingMatchingRules": [],
+        "requestHeadersInserted": null,
+        "responseCodeSent": null,
+        "httpRequest": {
+            "clientIp": "203.0.113.0",
+            "country": "US",
+            "headers": [
+                {
+                    "name": "host",
+                    "value": "testservice.GBquGaE.com"
+                },
+                {
+                    "name": "cache-control",
+                    "value": "max-age=0"
+                },
+                {
+                    "name": "sec-ch-ua",
+                    "value": "\"Chromium\";v=\"118\", \"Microsoft Edge\";v=\"118\", \"Not=A?Brand\";v=\"99\""
+                },
+                {
+                    "name": "sec-ch-ua-mobile",
+                    "value": "?0"
+                },
+                {
+                    "name": "sec-ch-ua-platform",
+                    "value": "\"Windows\""
+                },
+                {
+                    "name": "dnt",
+                    "value": "1"
+                },
+                {
+                    "name": "upgrade-insecure-requests",
+                    "value": "1"
+                },
+                {
+                    "name": "user-agent",
+                    "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.46"
+                },
+                {
+                    "name": "accept",
+                    "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+                },
+                {
+                    "name": "sec-fetch-site",
+                    "value": "none"
+                },
+                {
+                    "name": "sec-fetch-mode",
+                    "value": "navigate"
+                },
+                {
+                    "name": "sec-fetch-user",
+                    "value": "?1"
+                },
+                {
+                    "name": "sec-fetch-dest",
+                    "value": "document"
+                },
+                {
+                    "name": "accept-encoding",
+                    "value": "gzip, deflate, br"
+                },
+                {
+                    "name": "accept-language",
+                    "value": "en-US,en;q=0.9"
+                }
+            ],
+            "uri": "/",
+            "args": "",
+            "httpVersion": "HTTP/2.0",
+            "httpMethod": "GET",
+            "requestId": "1-652efba6-2fc445987f3df9725927548f",
+            "host": "testservice.GBquGaE.com",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.46"
+        },
+        "ja3Fingerprint": "b71665d34a06160f17defec4f48cf2bd",
+        "terminatingRuleName": "Unknown"
+    }
+]

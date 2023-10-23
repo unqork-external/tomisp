@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "tomisp"
+version = "0.1.0"
+description = "Classes and Functions for adding data into MISP"
+authors = ["Unqork Security Threat Detection and Response <Security-TDR@unqork.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pymisp = "^2.4.176"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
