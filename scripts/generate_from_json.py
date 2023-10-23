@@ -1,0 +1,214 @@
+"""
+ToMISP - generate object functions from mips-objects json
+generates the 'generated.py' based on the misp-objects repo
+"""
+import argparse
+import datetime
+import json
+import keyword
+import os
+import os.path
+
+comment_block = '"""'
+
+
+def load_json(filepath: str) -> dict:
+    """
+    load_json - loads JSON from a file
+    """
+    with open(filepath, "r") as f_in:
+        return json.load(f_in)
+
+
+# _master_str_types = []
+def misp_type_to_python_type(type_name: str) -> str:
+    """
+    misp_type_to_python_type - converts a MISP type to a python type
+    """
+    if type_name in ["port", "counter", "size-in-bytes"]:
+        return "int"
+    elif type_name in ["float"]:
+        return "float"
+    elif type_name in ["boolean"]:
+        return "bool"
+    elif type_name in ["datetime", "date-of-birth"]:
+        return "datetime"
+    elif type_name in ["attachment"]:
+        return "file"
+    else:
+        # if type_name not in _master_str_types:
+        #    _master_str_types.append(type_name)
+        return "str"
+
+
+def num_to_word(s: str) -> str:
+    """
+    num_to_word - converts a digit to its english name
+    """
+    c = s[0]
+    if c.isdigit():
+        c = int(c)
+        if c == 0:
+            return "zero"
+        elif c == 1:
+            return "one"
+        elif c == 2:
+            return "two"
+        elif c == 3:
+            return "three"
+        elif c == 4:
+            return "four"
+        elif c == 5:
+            return "five"
+        elif c == 6:
+            return "six"
+        elif c == 7:
+            return "seven"
+        elif c == 8:
+            return "eight"
+        elif c == 9:
+            return "nine"
+        else:
+            return "unknown_number"
+    else:
+        return s
+
+
+def fix_name(name: str, replacement_char: str = "_") -> str:
+    """
+    fix_name - removes unwanted chars from a 'name'
+    """
+    if name[0].isdigit():
+        name = num_to_word(name[0]) + name[1:]
+    elif keyword.iskeyword(name):
+        name = "item_" + name
+
+    bad_chars = ["-", "&", ".", "/", " ", ":"]
+    for bad_char in bad_chars:
+        name = name.replace(bad_char, replacement_char)
+    return name
+
+
+def print_obj_func(obj: dict, tab_count: int = 0, tab_char: str = " " * 4):
+    """
+    print_obj_func - prints a MISP object definition to functions to stdout
+    """
+    obj_name = obj.get("Name")
+    obj_desc = obj.get("Description", "")
+    requires = obj.get("Requires", [])
+
+    doc_attribs = []
+    add_attribs = []
+    arg_list = []
+    # extract_vars = []
+    for attrib in obj.get("Attribs", []):
+        attrib_name = attrib.get("Name")
+        attrib_name_fixed = fix_name(attrib_name)
+        attrib_desc = attrib.get("Description")
+
+        arg_list.append(attrib_name)
+        # extract_vars.append(f"{attrib_name_fixed} = kwargs.get(\"{attrib_name}\")")
+        doc_attribs.append(f"{tab_char*(tab_count+2)}{attrib_name} - {attrib_desc}")
+        add_attribs.append(
+            f'MISPHelper._add_obj_attribute(obj, "{attrib_name}", {attrib_name_fixed})'
+        )
+
+    if len(requires) > 0:
+        doc_must_have = (
+            f"\n{tab_char*(tab_count+1)}Must have one of the following: {requires}\n"
+        )
+    else:
+        doc_must_have = ""
+
+    # extract_vars = f"\n{tab_char*(tab_count+1)}".join(extract_vars)
+    add_attribs = f"\n{tab_char*(tab_count+2)}".join(add_attribs)
+    doc_attribs = "\n".join(doc_attribs)
+    obj_name_fixed = fix_name(obj_name)
+    func_doc = f"""create_obj_{obj_name_fixed} - function for creating MISP {obj_name} object
+
+{tab_char*(tab_count+1)}{obj_name} = {obj_desc}
+
+{tab_char*(tab_count+1)}Arguments:
+{tab_char*(tab_count+2)}event - pyMISP MISP Event
+
+{tab_char*(tab_count+1)}Keyword Arguments:
+{doc_attribs}
+{doc_must_have}
+{tab_char*(tab_count+1)}Returns:
+{tab_char*(tab_count+2)}a MISP object representing an '{obj_name}'
+"""
+
+    obj_str = f"""
+def create_obj_{obj_name_fixed}(event: MISPEvent, **kwargs) -> MISPObject:
+    {comment_block}
+    {func_doc}
+    {comment_block}
+    requires = {requires}
+    args = {arg_list}
+
+
+    validate_args(requires, kwargs)
+    uniq_str = generate_uniq(requires, kwargs) + "|{obj_name}"
+    obj, isNew = MISPHelper._create_obj_cached(event, \"{obj_name}\", uniq_str)
+    if isNew:
+        for arg in args:
+            MISPHelper._add_obj_attribute(obj, arg, kwargs.get(arg))
+    return obj
+"""
+    print(obj_str)
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(
+        description="Generates functions for creating MISP objects from the misp-object repo definitions"
+    )
+    parser.add_argument(
+        "-p", "--path", help="path to a local copy of the misp-objects git repo"
+    )
+
+    args = parser.parse_args()
+
+    base_folder = os.path.join(args.path, "objects")
+
+    ans = []
+    nw_str = datetime.datetime.utcnow().isoformat() + "Z"
+    print(
+        f"""{comment_block}
+MISP Object builder
+Autogenerated on: {nw_str}
+{comment_block}
+from pymisp import MISPEvent, MISPObject
+from .misphelper import MISPHelper
+from .common import validate_args, generate_uniq"""
+    )
+    for root, dirs, files in os.walk(base_folder):
+        for filename in files:
+            _, ext = os.path.splitext(filename)
+            if ext in [".json"]:
+                file_path = os.path.join(root, filename)
+                # obj_name = os.path.basename(os.path.dirname(file_path))
+                obj_def = load_json(file_path)
+                obj_name = obj_def.get("name")
+                obj_desc = obj_def.get("description")
+                requires = obj_def.get("requiredOneOf", [])
+
+                obj = {
+                    "Name": obj_name,
+                    "Requires": requires,
+                    "Description": obj_desc,
+                    "Attribs": [],
+                }
+                for attrib_name, attrib_def in obj_def.get("attributes", {}).items():
+                    py_type = misp_type_to_python_type(attrib_def.get("misp-attribute"))
+                    description = attrib_def.get("description")
+
+                    obj["Attribs"].append(
+                        {
+                            "Name": attrib_name,
+                            "Description": description,
+                            "Type": py_type,
+                            "Values": attrib_def.get("values_list", None),
+                        }
+                    )
+                print_obj_func(obj)
+                ans.append(obj)
