@@ -1,4 +1,13 @@
 # ToMisp
+![GitHub](https://img.shields.io/github/license/unqork-external/tomisp)
+![Static Badge](https://img.shields.io/badge/Status-release-green)
+![Dynamic TOML Badge](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2Funqork-external%2Ftomisp%2Fmain%2Fpyproject.toml&query=%24.tool.poetry.version&label=Version)
+
+
+[![Run pytest](https://github.com/unqork-external/tomisp/actions/workflows/test.yml/badge.svg)](https://github.com/unqork-external/tomisp/actions/workflows/test.yml)
+[![Build WHLs](https://github.com/unqork-external/tomisp/actions/workflows/build.yml/badge.svg)](https://github.com/unqork-external/tomisp/actions/workflows/build.yml)
+
+---
 
 A module for helping with some of the heavy lifting when adding data into MISP. These classes and functions provide a uniform way to create objects in a MISP event, thus allowing better analysis inside MISP. By default it will deduplicate objects and relationships created so that the same object will NOT be created more than once in a given MISP event. The uniqueness of the object are based on the supplied required parameters of each object.
 
